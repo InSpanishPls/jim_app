@@ -32,7 +32,6 @@ class Curso:
         :param capacidad_maxima: Capacidad máxima de participantes en el curso
         """
         self.titulo = titulo
-        self.identificador = titulo.replace(" ", "-").lower()  # Convertir el título en un identificador único (Slug)
         self.descripcion = descripcion
         self.entrenador = entrenador  # Relación con el entrenador (Usuario)
         self.fecha_creacion = datetime.now()  # Fecha de creación del curso
