@@ -1,6 +1,9 @@
 
 ESTRUCTURA CARPETAS
 
+mkdir jim_app
+
+cd jim_app
 
 mkdir -p jim_app/migrations
 mkdir -p jim_app/static/gimnasio
