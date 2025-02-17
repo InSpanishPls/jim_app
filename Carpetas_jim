@@ -1,0 +1,40 @@
+
+ESTRUCTURA CARPETAS
+
+
+mkdir -p jim_app/migrations
+mkdir -p jim_app/static/gimnasio
+mkdir -p jim_app/templates/gimnasio
+mkdir -p proyecto_jim
+
+touch jim_app/migrations/.gitkeep
+touch jim_app/static/gimnasio/.gitkeep
+touch jim_app/templates/gimnasio/.gitkeep
+touch proyecto_jim/.gitkeep
+
+touch jim_app/admin.py
+touch jim_app/apps.py
+touch jim_app/models.py
+touch jim_app/views.py
+touch jim_app/urls.py
+touch proyecto_jim/settings.py
+touch proyecto_jim/urls.py
+touch manage.py
+
+
+Estructura de Carpetas  JIM
+├─ jim_app
+│  ├─ migrations/
+│  ├─ static/gimnasio/        
+│  ├─ templates/gimnasio/      
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ models.py
+│  ├─ views.py
+│  ├─ urls.py
+│  └─ ...
+├─ proyecto_jim/
+│  ├─ settings.py
+│  ├─ urls.py
+│  ├─ ...
+└─ manage.py
