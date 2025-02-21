@@ -57,7 +57,8 @@ class Ejercicio(models.Model):
     
     nombre = models.CharField(max_length=200)  # Nombre del ejercicio.
     descripcion = models.TextField()  # Descripción detallada del ejercicio.
-    grupo_muscular = models.CharField(max_length=100)  # Grupo muscular trabajado en el ejercicio.
+    grupo_muscular = models.CharField(max_length=100, choices=GRUPOS_MUSCULARES)  # Grupo muscular trabajado en el ejercicio.
+
 
     def __str__(self):
         return f"{self.nombre} ({self.grupo_muscular})"  # Representación en string del ejercicio.
