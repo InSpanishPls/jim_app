@@ -47,6 +47,14 @@ class Matricula(models.Model):
 
 # Modelo Ejercicio
 class Ejercicio(models.Model):
+    GRUPOS_MUSCULARES = [
+        ('Pectorales', 'Pectorales'),
+        ('Espalda', 'Espalda'),
+        ('Piernas', 'Piernas'),
+        ('Brazos', 'Brazos'),
+        ('Abdomen', 'Abdomen'),
+    ]
+    
     nombre = models.CharField(max_length=200)  # Nombre del ejercicio.
     descripcion = models.TextField()  # Descripción detallada del ejercicio.
     grupo_muscular = models.CharField(max_length=100)  # Grupo muscular trabajado en el ejercicio.
